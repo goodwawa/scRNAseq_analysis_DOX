@@ -25,3 +25,7 @@ Core Requirements
 ## Notes
 - Input files are expected in 'data/' folder (not included)
 -  The raw and processed scRNA-seq data are currently under peer review. Upon acceptance, the dataset will be deposited and publicly available via the NCBI GEO database.
+
+## Authors / Contributors
+- Dr. Wa Du (Analysis and script development; Principal Investigator)
+- Dr. Yanbo Fan (Supervision and project oversight; Principal Investigator)
