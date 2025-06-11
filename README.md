@@ -4,10 +4,10 @@ This repository contains the R scripts used to perform the single-cell-RNA-seq (
 
 ##Software & Dependencies
 Core Requirements
-- R version 4.2.0
-- Seurat v4.3.0
-- DoubletFinder v
-- msigdbr version
+- R version 4.5.0
+- Seurat v5.3.0
+- DoubletFinder v2.0.6
+- msigdbr v24.1.0
 - tidyverse (includes ggplot2, dplyr, tibble, etc.)
 - ggrepel
 - future
