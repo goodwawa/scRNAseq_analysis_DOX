@@ -14,8 +14,11 @@ Core Requirements
 
 ## Analysis Workflow
 1. **01_QC_and_filtering.R** – Load raw single-cell RNA-seq data (10X Genomics format); perform quality control based on mitochondrial content and gene counts; identifies and removes doublets using DoubletFinder.
-2. **02_Normalization_clustering_integration.R** – Normalize, identifies highly variable features and performs dimentionality reduction (PCA, UMAP), cluster cells, individual samples integration.
+2. **02_Normalization_clustering_integration.R** – Normalize, identifies highly variable features and performs dimensionality reduction (PCA, UMAP), cluster cells, and individual samples integration.
 3. **03_Differential_expression.R** – FindMarkers() for DEGs.
 4. **04_Cellchat_analysis.R** – CellChat analysis for endothelial cell-cardiomyocyte communications under the vehicle and DOX treated mouse cardiac tissue.
 5. **05_Pathway_analysis.R** – SCPA pathway enrichment analysis using msigdbr hallmark and individual genesets.
 
+## Notes
+- Input files are expected in 'data/' folder (not included)
+-  The raw and processed scRNA-seq data are currently under peer review. Upon acceptance, the dataset will be deposited and publicly available via the NCBI GEO database.
