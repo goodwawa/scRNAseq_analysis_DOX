@@ -8,7 +8,10 @@ Core Requirements
 - Seurat v5.3.0
 - DoubletFinder v2.0.6
 - msigdbr v24.1.0
-- tidyverse (includes ggplot2, dplyr, tibble, etc.)
+- CellChat v2.2.0
+- SCPA v1.6.2
+- MAST v1.33.0
+- tidyverse (includes ggplot2, dplyr, etc.)
 - ggrepel
 - future
 
