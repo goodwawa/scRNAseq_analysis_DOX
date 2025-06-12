@@ -1,8 +1,7 @@
-##scRNAseq_analysis_DOX Pipeline 
-For manuscript: Endothelial transcription factor EB protects against doxorubicin-induced endothelial toxicity and cardiac dysfunction
+## scRNAseq_analysis_DOX Pipeline For manuscript: Endothelial transcription factor EB protects against doxorubicin-induced endothelial toxicity and cardiac dysfunction
 This repository contains the R scripts used to perform the single-cell-RNA-seq (scRNA-seq) analysis in our study investigating the protective role of endothelial TFEB against doxorubicin-induced vascular and cardiac damage.
 
-##Software & Dependencies
+## Software & Dependencies
 Core Requirements
 - R version 4.5.0
 - Seurat v5.3.0
@@ -19,13 +18,14 @@ Core Requirements
 1. **01_QC_and_filtering.R** – Load raw single-cell RNA-seq data (10X Genomics format); perform quality control based on mitochondrial content and gene counts; identifies and removes doublets using DoubletFinder.
 2. **02_Normalization_clustering_integration.R** – Normalize, identifies highly variable features and performs dimensionality reduction (PCA, UMAP), cluster cells, and individual samples integration.
 3. **03_Differential_expression.R** – FindMarkers() for DEGs.
-4. **04_Cellchat_analysis.R** – CellChat analysis for endothelial cell-cardiomyocyte communications under the vehicle and DOX treated mouse cardiac tissue.
+4. **04_Cellchat_analysis.R** – CellChat analysis for endothelial cell-cardiomyocyte communications under the vehicle and DOX-treated mouse cardiac tissue.
 5. **05_Pathway_analysis.R** – SCPA pathway enrichment analysis using msigdbr hallmark and individual genesets.
 
 ## Notes
-- Input files are expected in 'data/' folder (not included)
+- Input files are expected in '/path' folder (not included)
 -  The raw and processed scRNA-seq data are currently under peer review. Upon acceptance, the dataset will be deposited and publicly available via the NCBI GEO database.
 
 ## Authors / Contributors
-- Dr. Wa Du (Analysis and script development; Principal Investigator)
-- Dr. Yanbo Fan (Supervision and project oversight; Principal Investigator)
+- Wa Du (Analysis and script development)
+- Yanbo Fan (Supervision and project oversight)
+This repository is part of work supported by R01HL171495-01A1
