@@ -28,4 +28,4 @@ Core Requirements
 ## Authors / Contributors
 - Wa Du (Analysis and script development)
 - Yanbo Fan (Supervision and project oversight)
-This repository is part of work supported by R01HL171495
+This repository is part of work supported by R01HL171495 (to Y.F. and W.D.)
