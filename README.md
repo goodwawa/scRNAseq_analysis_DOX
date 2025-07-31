@@ -1,4 +1,4 @@
-## scRNAseq_analysis_DOX Pipeline For manuscript: Endothelial transcription factor EB protects against doxorubicin-induced endothelial toxicity and cardiac dysfunction
+## scRNA-seq analysis Pipeline For manuscript: Endothelial transcription factor EB protects against doxorubicin-induced endothelial toxicity and cardiac dysfunction
 This repository contains the R scripts used to perform the single-cell-RNA-seq (scRNA-seq) analysis in our study investigating the protective role of endothelial TFEB against doxorubicin-induced vascular and cardiac damage.
 
 ## Software & Dependencies
