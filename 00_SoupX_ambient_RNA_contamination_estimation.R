@@ -1,6 +1,6 @@
 ####################################################################################################
 # Script: 00_SoupX_ambient_RNA_contamination_estimation.R
-# Description: This script performs Quality control, normalization, and doublet removal using DoubletFinder
+# Description: This script performs ambient RNA contamination estimation
 #              for one example (WT_vehicle_01) of 18 samples.
 # Author: [Wa Du]
 # Affiliation: [Department of Surgery, Division of Vascular Diseases and Surgery]
