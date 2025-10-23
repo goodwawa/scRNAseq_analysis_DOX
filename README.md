@@ -1,5 +1,5 @@
 ## scRNA-seq analysis Pipeline For manuscript: Endothelial transcription factor EB protects against doxorubicin-induced endothelial toxicity and cardiac dysfunction
-This repository contains the R scripts used to perform the single-cell-RNA-seq (scRNA-seq) analysis in our study investigating the protective role of endothelial TFEB against doxorubicin-induced vascular and cardiac damage.
+This repository contains the R scripts used to perform the single-cell RNA-seq (scRNA-seq) analysis in our study investigating the protective role of endothelial TFEB against doxorubicin-induced vascular and cardiac damage.
 
 ## Software & Dependencies
 Core Requirements
@@ -13,13 +13,15 @@ Core Requirements
 - tidyverse (includes ggplot2, dplyr, etc.)
 - ggrepel
 - future
+- SoupX v1.6.2
 
 ## Analysis Workflow
-1. **01_QC_and_filtering.R** – Load raw single-cell RNA-seq data (10X Genomics format); perform quality control based on mitochondrial content and gene counts; identifies and removes doublets using DoubletFinder.
-2. **02_Normalization_clustering_integration.R** – Normalize, identifies highly variable features and performs dimensionality reduction (PCA, UMAP), cluster cells, and individual samples integration.
-3. **03_Differential_expression.R** – FindMarkers() for DEGs.
-4. **04_Cellchat_analysis.R** – CellChat analysis for endothelial cell-cardiomyocyte communications under the vehicle and DOX-treated mouse cardiac tissue.
-5. **05_Pathway_analysis.R** – SCPA pathway enrichment analysis using msigdbr hallmark and individual genesets.
+1. **00_SoupX_ambient_RNA_contamination_estimation.R** – Load raw and filtered single-cell RNA-seq data (10X Genomics format), perform ambient RNA contamination estimation.
+2. **01_QC_and_filtering.R** – Load raw single-cell RNA-seq data (10X Genomics format); perform quality control based on mitochondrial content and gene counts; identifies and removes doublets using DoubletFinder.
+3. **02_Normalization_clustering_integration.R** – Normalize, identifies highly variable features and performs dimensionality reduction (PCA, UMAP), cluster cells, and individual samples integration.
+4. **03_Differential_expression.R** – FindMarkers() for DEGs.
+5. **04_Cellchat_analysis.R** – CellChat analysis for endothelial cell-cardiomyocyte communications under the vehicle and DOX-treated mouse cardiac tissue.
+6. **05_Pathway_analysis.R** – SCPA pathway enrichment analysis using msigdbr hallmark and individual genesets.
 
 ## Notes
 - Input files are expected in '/path' folder (not included)
